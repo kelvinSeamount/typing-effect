@@ -1,0 +1,48 @@
+:root {
+  --lg-container-width: 84%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-image: url(/asset/boat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: var(--lg-container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type {
+  color: rgb(0, 255, 98);
+  margin-left: 7px;
+}
+
+.type::after {
+  content: "";
+  border-left: 3px solid black;
+  margin-left: 4px;
+  animation: blinking 400ms infinite ease-in;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

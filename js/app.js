@@ -16,7 +16,7 @@ const displayType = function () {
   if (count === words.length) {
     count = 0;
   }
-  console.log(displayType);
+
   //select a current word to be displayed
   let displayWords = words[count];
 

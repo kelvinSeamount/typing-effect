@@ -1,5 +1,6 @@
 :root {
   --lg-container-width: 84%;
+  --sm-container-width: 94%;
 }
 * {
   margin: 0;
@@ -44,5 +45,12 @@ section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--sm-container-width);
+    flex-direction: column;
   }
 }
